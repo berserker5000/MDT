@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+' // ***************************************************************************
+' // 
+' // Copyright (c) Microsoft Corporation.  All rights reserved.
+' // 
+' // Microsoft Deployment Toolkit Solution Accelerator
+' //
+' // File:      DeployWiz_Definition_ENU.wsf
+' // 
+' // Version:   6.3.8298.1000
+' // 
+' // Purpose:   Main Client Deployment Wizard Defintion File
+' // 
+' // ***************************************************************************
+
+-->
+<Wizard>
+  <Global>
+    <CustomScript>DeployWiz_Inventory.vbs</CustomScript>
+  </Global>
+  <Pane id="Inventory" title="Inventory Number">
+    <Body><![CDATA[<H1 align=center>Enter responsible user if needed and scan inventory number</H1>
+
+<p align=center>Inventory number will be cuted to computer name</p>
+
+
+<p>&nbsp;</p>
+<table style="width: 100%;">
+	<tr align=center>	
+			<td style="width:1px;">
+			<img src="Computer.png">
+		</td>	
+		<td>
+			<span class=Larger>Responsible User:</span>
+		</td>
+		<td>
+			<input type=text id="OSDManagedBy" name=OSDManagedBy size=15 language=vbscript onpropertychange=ValidateLoginName value="TEMP_" />			
+		</td>
+	</tr>
+	<tr align=center>
+	<td></td>
+			<td style="width: 160px;">
+				<span class=Larger>Inventor<u class=Larger>y</u> number:</span>
+			</td>
+			<td>
+				<input type=text id="AssetTag" name=AssetTag size=15 language=vbscript onpropertychange=ValidateAssetTag AccessKey=y />
+			</td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+<div align="center"><img src="Ciklum.png" height="63" width="232"></div>
+
+
+
+
+		]]></Body>
+    <HideBackNext>false</HideBackNext>
+    <Initialization><![CDATA[InitializeAssetTag]]></Initialization>
+    <Validation><![CDATA[ValidateAssetTag]]></Validation>
+    <Validation><![CDATA[ValidateLoginName]]></Validation>
+  </Pane>
+</Wizard>

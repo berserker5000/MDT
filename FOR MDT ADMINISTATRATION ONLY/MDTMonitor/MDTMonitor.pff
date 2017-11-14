@@ -1,0 +1,950 @@
+﻿
+  <FileID>2e13c68a-fbf9-4540-b83d-bc14521765be</FileID>
+  <LastExport>130359117852497587</LastExport>
+  <FileVersion>1.2</FileVersion>
+  <Object type="System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="formMain" children="Controls">
+    <Property name="ClientSize">768, 603</Property>
+    <Property name="FormBorderStyle">FixedSingle</Property>
+    <Property name="Icon">
+      <Binary>AAABAAMAEBAAAAAAIABoBAAANgAAACAgAAAAACAAqBAAAJ4EAAAwMAAAAAAgAKglAABGFQAAKAAAABAAAAAgAAAAAQAgAAAAAABABAAAAAAAAAAAAAAAAAAAAAAAAP///wH///8B////Abu7uweurq4PoaGhGZaWliOPj48nj4+PJ5aWliOioqIZsLCwEcHBwQfMzMwD////Af///wH///8BxsbGA729vQ2rq6sflpaWOYCAgE9tbW1jYWFhb2BgYG9tbW1jgYGBUZiYmDmvr68hx8fHDdbW1gP///8B////Aa6urgevr68bnJycPYKCgmFtbW2JZ2dnsW9vb8Nvb2/DXl5eqWdnZ4OEhIRfoaGhPbm5uRvMzMwH////Af///wF/f38JlZWVH5eXl0m0tLSrzMzM8dXV1f/Pz8//09PT/9nZ2f/KysrnpKSkj5SUlD+oqKgdqampB////wEAAAADJSUlCVZWVhnGxsarycnJ+7CwsPmpqan5oqKi+aOjo/urq6v9srKy/83NzfvFxcWPbW1tE0hISAX///8BAAAABQAAAAumpqZlrq6u85iYmPGFhYXzdHR09XJycvV3d3f7c3Nz/4GBgf+srKn7traw8a6url0BAQEHAAAAAwAAAAc0NDQXoKCI15SUfu1wcHDtW1tb8UpKSvNERETzUVFP9XJyWfVzc3P1np5798LCg/OdnZ3TU1NTDwAAAAMAAAAJfX19U5ubeOl+flzrTU1N6zMzM+0SEhLtCQkJ6yMjGe2MjEj5T09O9WdnZ+16enjlgYGB4YeHh0sAAAAFDg4OC4WFhZV6enrtYGBX6RcXF+ElJRLpOTkX8RsbEvEODg71ICAg9ykpKfE1NTXfWFhY321tbdt1dXVvAAAABR4eHg1qamqpWVlZ+UpKQusODg7dMTEW6UJCHfEFBQXvEBAQ8x4eHvc7OyntICAg3zg4ONdVVVPVXFxcbwAAAAUUFBQLZ2dnjxoaGv+AgFXpKysW3xMTE+UeHh7tGxsb8xsbG+8XFxf9NjYv+0ZGPO85OTnZWlpJ1UtLS08AAAAFAAAAB56enksICAj9Pj4c/UpKPes0NDTlS0s57zAwLv04ODL7LCws/y8vL/87Ozn9T09K6zQ0NMUdHR0VAAAAAwAAAAWGhoYZOzs70RgYCP9TU1P9X19f92VlZfNgYD//jIxP/0JCQv9KSkr/MzMz/zMzM/lHR0d5AAAABwAAAAMAAAADExMTB4+Pj08TExPxOTk5/3x8ev+BgWv/Z2dn/2pqaP9zc27/cHBw/zU1JP9JSUnJfHx8FQAAAAX///8B////AQAAAAM6OjoJkJCQTz09Pc1mZmX1mJiE/5CQkP+QkJD/d3du/01NTPlzc3OdkJCQGwcHBwX///8B////Af///wH///8BAAAAAxkZGQdycnITenp6U0hISKs/Pz/DSUlJt4CAgHeBgYEvPDw8CQAAAAX///8B////Af///wEAAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//KAAAACAAAABAAAAAAQAgAAAAAACAEAAAAAAAAAAAAAAAAAAAAAAAAP///wH///8B////Af///wH///8B////AcbGxgPCwsIFubm5Cbe3twuwsLAPq6urE6WlpReioqIZn5+fG56enhuenp4bn5+fG6KiohmmpqYXq6urE6+vrw+2trYLvr6+CcPDwwXGxsYD////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wHLy8sDvLy8Cba2tg2urq4Tp6enGZ6eniGYmJglkpKSLY2NjS+IiIgzhoaGM4eHhzOIiIgzjY2NL5KSkiuZmZkloKCgIampqRmxsbETvb29DcXFxQnLy8sFz8/PA////wH///8B////Af///wH///8B////Af///wH///8BycnJB7y8vAuzs7MVrKysHaGhoSmZmZkzjY2NPYWFhUd7e3tRdHR0V25ubl1ra2tfa2trX25ubl11dXVXe3t7UYaGhkePj48/m5ubM6SkpCmvr68dubm5FcfHxwvR0dEH1dXVA////wH///8B////Af///wH///8B////AcPDwwW/v78Lubm5Fa6uriGlpaUtmJiYPY2NjUmAgIBZdXV1Y2lpaW9iYmJ3Wlpaf1ZWVoNWVlaDWVlZf2JiYndpaWlxdnZ2Y4GBgVmPj49JmpqaPaioqC2zs7MhwcHBE8vLywvX19cF////Af///wH///8B////Af///wGsrKwDuLi4Cba2thOwsLAfpqamMZubmz+MjIxTgICAYXFxcXVmZmaDWlpalVBQUJ9ERESnQEBAqz8/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TP9RUVH/VFRU/1NTU/8ZGRn/FhYW/3R0dPNOTk6hRkZGIQAAAAcAAAAFAAAAA////wEAAAADAAAAAwEBAQcsLCwLu7u7N25ubqUGBgb7AAAA/yUlJf9ubm7/bm5u/4mJif9ycm7/ZGRi/2VlZf9cXFr/X19a/2hoZv9lZWX/Y2Nj/2hoaP9sbGz/U1NM/w8PDf8SEhL9TExM25GRkTM8PDwLAAAABQAAAAP///8B////Af///wEAAAADAAAABQYGBgd/f38Vv7+/R0xMTMsGBgb7BgYG/0xMTP9sbGz/jIyH/6ioa/+FhW//bm5u/25ubv9vb2//cXFx/319fP+IiHT/e3t6/3BwcP9WVir/HR0P/11dXd+WlpZvhISEExQUFAcAAAAFAAAAA////wH///8B////Af///wEAAAADAAAABREREQdqamoRwMDASW1tbacVFRXzISEh+2FhYfl0dHH/sbF3/5ycif+MjIz/ioqK/4qKiv+Li4v/j4+M/6Skgf9oaGX/ISEh/0hISPOBgYHBpaWlQ4uLixUTExMHAAAABQAAAAP///8B////Af///wH///8B////AQAAAAMAAAADAAAABRISEgeEhIQVvr6+OXx8fIloaGi7eHh44U1NTfuUlJL9f39//46Ojv+dnZ3/nZ2d/42Njf9iYmH/SUlJ/0pKSvljY2Prm5ubi5eXlzdiYmIPISEhBwAAAAUAAAAD////Af///wH///8B////Af///wH///8B////Af///wEAAAADAAAABQgICAc3NzcLgYGBFZeXlx+fn59RVlZWsSkpKeUgICDvGhoa9xMTE/kXFxf3PDw87Xd3d8+JiYmth4eHb5GRkTFubm4RICAgCQAAAAUAAAAFAAAAA////wH///8B////Af///wH///8B////Af///wH///8B////AQAAAAMAAAADAAAABQICAgUTExMJKSkpC4eHhxe0tLQ1mpqaYY6OjneKioqJgYGBkX9/f4mUlJRti4uLPXR0dCFVVVUPNDQ0CwsLCwcAAAAFAAAAAwAAAAP///8B////Af///wH///8B////Af///wEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAAAwAAAAYAAAAAEAIAAAAAAAgCUAAAAAAAAAAAAAAAAAAAAAAAD///8B////Af///wH///8B////Af///wH///8B////Af///wH///8Bx8fHA8bGxgXCwsIFwMDAB729vQm5ubkLtbW1DbKysg+urq4RrKysE6qqqhOnp6cVp6enFaamphWmpqYVp6enFaenpxWqqqoTrKysE6+vrxGxsbEPtLS0Dbe3twu7u7sJwcHBB8PDwwfFxcUFxMTEA8jIyAP///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////AczMzAPIyMgFxMTEB7y8vAm2trYNsrKyD7CwsBGqqqoVpqamGaKiohufn58fnJycIZmZmSOXl5cllpaWJZWVlSWVlZUllZWVJZeXlyWZmZkjm5ubIaCgoB+jo6MbqKioGaurqxWvr68TtbW1D76+vg3BwcEJxcXFB8fHxwXJyckD1NTUA////wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B09PTA8nJyQW+vr4Jtra2DbS0tBGvr68VqKioGaOjox+enp4jmZmZKZSUlC2QkJAxjIyMNYiIiDeFhYU5g4ODO4KCgjuDg4M7hISEO4WFhTmJiYk3jIyMM5GRkTGVlZUtmpqaKaCgoCOmpqYfq6urG7GxsRW6uroRw8PDDcjIyAnJyckH0NDQBc3NzQP///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wHc3NwFxsbGB7q6ugu3t7cRs7OzFaysrBunp6cjoaGhKZubmy+UlJQ1jo6OO4iIiEGCgoJHfn5+S3l5eVF2dnZTc3NzVXJycldycnJVc3NzVXV1dVN5eXlPfn5+TYODg0eJiYlBj4+PO5aWljednZ0vpKSkKaurqyOwsLAbtra2F8DAwA/JyckLzs7OB9jY2AXV1dUD////Af///wH///8B////Af///wH///8B////Af///wH///8B////AdbW1gPCwsIHvb29Dby8vBG0tLQZrq6uH6ioqCegoKAvmZmZN5KSkkGKiopJg4ODUXx8fFd1dXVfb29vZWtra2lmZmZtY2NjcWJiYnNhYWFxY2NjcWZmZm1ra2tpcHBwZXZ2dl99fX1XhISEUYuLi0mTk5NBm5ubOaOjozGrq6sns7OzH7i4uBnCwsIRz8/PC9DQ0AfV1dUF2NjYA////wH///8B////Af///wH///8B////Af///wH///8Bz8/PA76+vgfBwcELvb29Ebe3txmxsbEhqampK6GhoTOampo/kZGRR4mJiVGAgIBbeHh4ZXBwcG1oaGh1YmJie1xcXIFXV1eHU1NTiVFRUY1RUVGNU1NTi1ZWVodcXFyBYmJifWhoaHVxcXFteXl5ZYGBgVuKiopTk5OTSZycnD+lpaU1ra2tK7e3tyG/v78ZxMTEEdDQ0AvY2NgH1tbWA////wH///8B////Af///wH///8B////Af///wH///8BsrKyBb6+vgm6uroPtra2F7GxsSGrq6srpKSkNZycnEGSkpJLiYmJV4CAgGF3d3dtbm5ud2ZmZoFdXV2LVlZWk09PT5lJSUmfRUVFo0NDQ6VDQ0OlRUVFo0hISJ9OTk6ZVVVVk1xcXItmZmaBb29vd3h4eG2CgoJji4uLV5WVlU2fn59BqampNbCwsCu5ubkhv7+/F8PDww/T09MJ2dnZBf///wH///8B////Af///wH///8B////Af///wGYmJgDs7OzB7W1tQu2trYTsrKyG62trSWmpqYxnp6ePZWVlUmMjIxVgoKCYXl5eW1xcXF7aWlph2JiYpNcXFyfVVVVqUxMTK9CQkKzOzs7tTk5Obk4ODi5Ojo6tT4+Pq9ERESpTExMoVRUVJldXV2PZ2dnhXFxcXl7e3tthYWFYY+Pj1WamppJo6OjPaysrDG1tbUnvLy8G8PDwxPGxsYL19fXB9nZ2QP///8B////Af///wH///8B////Af///wGSkpIFpaWlB6+vrw2vr68VrKysH6enpymhoaE1mZmZQ5CQkE+Hh4ddf39/aXl5eXl1dXWLc3NznW9vb69tbW3HgICA25eXl+epqanvtLS087q6uvW7u7v1tbW186ioqO2RkZHfcHBwy1JSUq9YWFiXYmJii2tra4F2dnZzgICAZ4uLi1uVlZVPn5+fQaioqDWxsbEpuLi4H7+/vxXGxsYNwsLCB9jY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C/9zc3Pxq6urkcLCwjF0dHQRGBgYBwAAAAUAAAAFAAAAAwAAAAP///8B////Af///wH///8B////AQAAAAMAAAADAAAABQAAAAUCAgIHLy8vC4mJiRnIyMhBwsLCjTU1NecAAAD/AAAA/w8PD/87Ozv9Z2dn/4yMhP/IyHD/urpv/46Oiv+EhIT/hISE/4SEhP+EhIT/hoaG/4iIiP+JiYn/kJCE/8bGf/+Wlo//XV1d/wgICP8eHh3/R0dH+ZmZmd+lpaVzuLi4KXh4eBEgICAJAAAABQAAAAUAAAADAAAAA////wH///8B////Af///wH///8B////Af///wEAAAADAAAAAwAAAAUAAAAFBAQEBzIyMguKiooZxMTEOc/Pz3daWlrLKysr92lpafGgoKDpgICA905OTv+EhH3/nZ2Y/5ubm/+goKD/mJiY/5WVlf+Wlpb/lZWV/5WVlf+Xl5f/lpaV/319e/86Ojr/IyMj/xgYGP2EhITxm5ubu52dnU2dnZ0bX19fDx0dHQkAAAAFAAAABQAAAAMAAAAD////Af///wH///8B////Af///wH///8B////Af///wH///8BAAAAAwAAAAMAAAAFAAAABQICAgcwMDALenp6Fba2tivS0tJTkpKSf25ubq10dHTNWFhY9Ts7O/2Xl5f7nJyc/V1dXf9/f3//mZmZ/6Wlpf+lpaX/nJyc/4GBgf9UVFT/Ly8v/yoqKv1MTEz3bW1t85ycnNmysrJ9pKSkKXR0dBMyMjILCgoKBwAAAAUAAAAFAAAAAwAAAAP///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////AQAAAAMAAAADAAAABQAAAAUBAQEHGhoaCVBQUA+JiYkXoaGhI6mpqSm3t7dDiYmJpyYmJvEMDAz/ERER/wQEBP8CAgL/AQEB/wEBAf8CAgL/ExMT/zAwMP1mZmb1i4uL7YuLi9uIiIiviIiIbaurqy2KiooZSUlJDRQUFAkAAAAHAAAABQAAAAUAAAADAAAAA////wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wEAAAADAAAAAwAAAAUAAAAFAAAABwcHBwchISELOTk5DVBQUBGPj48dxMTEPb6+vnGOjo6jXV1dxV5eXtNVVVXhSEhI7TQ0NO8yMjLtTk5O44uLi8OPj4+XgoKCZYSEhDeJiYkdb29vFU1NTQ8lJSUJBgYGBwAAAAcAAAAFAAAAAwAAAAMAAAAD////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8BAAAAAwAAAAMAAAADAAAABQAAAAUAAAAHAQEBBwwMDAk6OjoNf39/Fa6uriPFxcU30NDQRdTU1E3W1tZX1NTUYdjY2GXa2tpf19fXT8LCwjOYmJgdZ2dnEz09PQ0eHh4LDQ0NCQMDAwcAAAAHAAAABQAAAAUAAAADAAAAAwAAAAP///8B////Af///wH///8B////Af///wH///8B////Af///wEAAAAAAAD//wAAAAAAAP//AAAAAAAA//8AAAAAAAD//wAAAAAAAP//AAAAAAAA//8AAAAAAAD//wAAAAAAAP//AAAAAAAA//8AAAAAAAD//wAAAAAAAP//AAAAAAAA//8AAAAAAAD//wAAAAAAAP//AAAAAAAA//8AAAAAAAD//wAAAAAAAP//AAAAAAAA//8AAAAAAAD//wAAAAAAAP//AAAAAAAA//8AAAAAAAD//wAAAAAAAP//AAAAAAAA//8AAAAAAAD//wAAAAAAAP//AAAAAAAA//8AAAAAAAD//wAAAAAAAP//AAAAAAAA//8AAAAAAAD//wAAAAAAAP//AAAAAAAA//8AAAAAAAD//wAAAAAAAP//AAAAAAAA//8AAAAAAAD//wAAAAAAAP//AAAAAAAA//8AAAAAAAD//wAAAAAAAP//AAAAAAAA//8AAAAAAAD//wAAAAAAAP//AAAAAAAA//8AAAAAAAD//wAAAAAAAP//AAAAAAAA//8=</Binary>
+    </Property>
+    <Property name="Name">formMain</Property>
+    <Property name="StartPosition">CenterScreen</Property>
+    <Property name="Text">MDT Monitor by Mattias Benninge</Property>
+    <Event name="Load">FormEvent_Load</Event>
+    <Object type="System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="cb_autorefreshmain" children="Controls">
+      <Property name="Location">104, 526</Property>
+      <Property name="Name">cb_autorefreshmain</Property>
+      <Property name="Size">320, 24</Property>
+      <Property name="TabIndex">6</Property>
+      <Property name="Text">Automatically refresh this information every 10 seconds</Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+      <Event name="CheckedChanged">cb_autorefreshmain_CheckedChanged</Event>
+    </Object>
+    <Object type="System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="pl_output" children="Controls">
+      <Property name="Location">13, 13</Property>
+      <Property name="Name">pl_output</Property>
+      <Property name="Size">742, 505</Property>
+      <Property name="TabIndex">28</Property>
+      <Property name="Visible">False</Property>
+      <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="bt_dgClose" children="Controls">
+        <Property name="Location">656, 468</Property>
+        <Property name="Name">bt_dgClose</Property>
+        <Property name="Size">75, 23</Property>
+        <Property name="TabIndex">1</Property>
+        <Property name="Text">Close</Property>
+        <Property name="UseVisualStyleBackColor">True</Property>
+        <Event name="Click">bt_dgClose_Click</Event>
+      </Object>
+      <Object type="System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="dg_output" children="Controls">
+        <Property name="AllowUserToAddRows">False</Property>
+        <Property name="AllowUserToDeleteRows">False</Property>
+        <Property name="AutoSizeRowsMode">AllCells</Property>
+        <Property name="ColumnHeadersHeightSizeMode">AutoSize</Property>
+        <Property name="Columns">
+          <Item type="System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+            <Reference name="dg_Time" />
+          </Item>
+          <Item type="System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+            <Reference name="dg_Message" />
+          </Item>
+        </Property>
+        <Property name="DefaultCellStyle">
+          <InstanceDescriptor member="AAEAAAD/////AQAAAAAAAAAEAQAAAC9TeXN0ZW0uUmVmbGVjdGlvbi5NZW1iZXJJbmZvU2VyaWFsaXphdGlvbkhvbGRlcgcAAAAETmFtZQxBc3NlbWJseU5hbWUJQ2xhc3NOYW1lCVNpZ25hdHVyZQpTaWduYXR1cmUyCk1lbWJlclR5cGUQR2VuZXJpY0FyZ3VtZW50cwEBAQEBAAMIDVN5c3RlbS5UeXBlW10GAgAAAAUuY3RvcgYDAAAAV1N5c3RlbS5XaW5kb3dzLkZvcm1zLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OQYEAAAAKlN5c3RlbS5XaW5kb3dzLkZvcm1zLkRhdGFHcmlkVmlld0NlbGxTdHlsZQYFAAAADFZvaWQgLmN0b3IoKQYGAAAABy5jdG9yKCkBAAAACgs=">
+            <Property name="Alignment">MiddleLeft</Property>
+            <Property name="BackColor">Window</Property>
+            <Property name="Font">Microsoft Sans Serif, 8.25pt</Property>
+            <Property name="ForeColor">ControlText</Property>
+            <Property name="SelectionBackColor">Highlight</Property>
+            <Property name="SelectionForeColor">HighlightText</Property>
+            <Property name="WrapMode">True</Property>
+          </InstanceDescriptor>
+        </Property>
+        <Property name="Location">0, 1</Property>
+        <Property name="MultiSelect">False</Property>
+        <Property name="Name">dg_output</Property>
+        <Property name="ReadOnly">True</Property>
+        <Property name="RowHeadersVisible">False</Property>
+        <Property name="SelectionMode">FullRowSelect</Property>
+        <Property name="Size">744, 461</Property>
+        <Property name="TabIndex">0</Property>
+      </Object>
+    </Object>
+    <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="bt_info" children="Controls">
+      <Property name="Anchor">Bottom, Left</Property>
+      <Property name="Enabled">False</Property>
+      <Property name="Location">12, 526</Property>
+      <Property name="Name">bt_info</Property>
+      <Property name="Size">75, 23</Property>
+      <Property name="TabIndex">5</Property>
+      <Property name="Text">&amp;Info</Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+      <Event name="Click">bt_info_Click</Event>
+    </Object>
+    <Object type="System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="pl_info" children="Controls">
+      <Property name="Anchor">Top, Bottom, Left, Right</Property>
+      <Property name="BackColor">White</Property>
+      <Property name="Location">13, 13</Property>
+      <Property name="Name">pl_info</Property>
+      <Property name="Size">742, 505</Property>
+      <Property name="TabIndex">4</Property>
+      <Property name="Visible">False</Property>
+      <Object type="System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="cb_autorefreshinfo" children="Controls">
+        <Property name="Location">136, 466</Property>
+        <Property name="Name">cb_autorefreshinfo</Property>
+        <Property name="Size">320, 24</Property>
+        <Property name="TabIndex">29</Property>
+        <Property name="Text">Automatically refresh this information every 10 seconds</Property>
+        <Property name="UseVisualStyleBackColor">True</Property>
+        <Event name="CheckedChanged">cb_autorefreshinfo_CheckedChanged</Event>
+      </Object>
+      <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="bt_ViewWarnings" children="Controls">
+        <Property name="Location">464, 346</Property>
+        <Property name="Name">bt_ViewWarnings</Property>
+        <Property name="Size">97, 23</Property>
+        <Property name="TabIndex">27</Property>
+        <Property name="Text">View Warnings</Property>
+        <Property name="UseVisualStyleBackColor">True</Property>
+        <Event name="Click">bt_ViewWarnings_Click</Event>
+      </Object>
+      <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="bt_ViewErrors" children="Controls">
+        <Property name="Location">464, 320</Property>
+        <Property name="Name">bt_ViewErrors</Property>
+        <Property name="Size">97, 23</Property>
+        <Property name="TabIndex">26</Property>
+        <Property name="Text">View Errors</Property>
+        <Property name="UseVisualStyleBackColor">True</Property>
+        <Event name="Click">bt_ViewErrors_Click</Event>
+      </Object>
+      <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="bt_DaRTRemote" children="Controls">
+        <Property name="Location">321, 416</Property>
+        <Property name="Name">bt_DaRTRemote</Property>
+        <Property name="Size">93, 23</Property>
+        <Property name="TabIndex">25</Property>
+        <Property name="Text">DaRT Remote</Property>
+        <Property name="UseVisualStyleBackColor">True</Property>
+        <Event name="Click">bt_DaRTRemote_Click</Event>
+      </Object>
+      <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="bt_remotedesktop" children="Controls">
+        <Property name="Location">137, 416</Property>
+        <Property name="Name">bt_remotedesktop</Property>
+        <Property name="Size">97, 23</Property>
+        <Property name="TabIndex">24</Property>
+        <Property name="Text">Remote Desktop</Property>
+        <Property name="UseVisualStyleBackColor">True</Property>
+        <Event name="Click">bt_remotedesktop_Click</Event>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="lb_stepofstep" children="Controls">
+        <Property name="Location">465, 195</Property>
+        <Property name="Name">lb_stepofstep</Property>
+        <Property name="Size">100, 23</Property>
+        <Property name="TabIndex">23</Property>
+        <Property name="Text">Step x of x</Property>
+        <Property name="TextAlign">MiddleLeft</Property>
+      </Object>
+      <Object type="System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="pb_progress" children="Controls">
+        <Property name="Location">137, 196</Property>
+        <Property name="Name">pb_progress</Property>
+        <Property name="Size">321, 23</Property>
+        <Property name="Step">1</Property>
+        <Property name="TabIndex">22</Property>
+      </Object>
+      <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="tb_warnings" children="Controls">
+        <Property name="Enabled">False</Property>
+        <Property name="Location">137, 348</Property>
+        <Property name="Name">tb_warnings</Property>
+        <Property name="Size">322, 20</Property>
+        <Property name="TabIndex">21</Property>
+      </Object>
+      <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="tb_errors" children="Controls">
+        <Property name="Enabled">False</Property>
+        <Property name="Location">136, 322</Property>
+        <Property name="Name">tb_errors</Property>
+        <Property name="Size">322, 20</Property>
+        <Property name="TabIndex">20</Property>
+      </Object>
+      <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="tb_elapsed" children="Controls">
+        <Property name="Enabled">False</Property>
+        <Property name="Location">136, 287</Property>
+        <Property name="Name">tb_elapsed</Property>
+        <Property name="Size">322, 20</Property>
+        <Property name="TabIndex">19</Property>
+      </Object>
+      <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="tb_end" children="Controls">
+        <Property name="Enabled">False</Property>
+        <Property name="Location">136, 261</Property>
+        <Property name="Name">tb_end</Property>
+        <Property name="Size">322, 20</Property>
+        <Property name="TabIndex">18</Property>
+      </Object>
+      <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="tb_start" children="Controls">
+        <Property name="Enabled">False</Property>
+        <Property name="Location">137, 235</Property>
+        <Property name="Name">tb_start</Property>
+        <Property name="Size">322, 20</Property>
+        <Property name="TabIndex">17</Property>
+      </Object>
+      <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="tb_step" children="Controls">
+        <Property name="Enabled">False</Property>
+        <Property name="Location">137, 158</Property>
+        <Property name="Name">tb_step</Property>
+        <Property name="Size">322, 20</Property>
+        <Property name="TabIndex">15</Property>
+      </Object>
+      <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="tb_deploymentstatus" children="Controls">
+        <Property name="Enabled">False</Property>
+        <Property name="Location">137, 117</Property>
+        <Property name="Name">tb_deploymentstatus</Property>
+        <Property name="Size">322, 20</Property>
+        <Property name="TabIndex">14</Property>
+      </Object>
+      <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="tb_computername" children="Controls">
+        <Property name="Enabled">False</Property>
+        <Property name="Location">137, 91</Property>
+        <Property name="Name">tb_computername</Property>
+        <Property name="Size">322, 20</Property>
+        <Property name="TabIndex">13</Property>
+      </Object>
+      <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="tb_id" children="Controls">
+        <Property name="Enabled">False</Property>
+        <Property name="Location">138, 48</Property>
+        <Property name="Name">tb_id</Property>
+        <Property name="Size">130, 20</Property>
+        <Property name="TabIndex">12</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="lb_warnings" children="Controls">
+        <Property name="Location">23, 351</Property>
+        <Property name="Name">lb_warnings</Property>
+        <Property name="Size">108, 23</Property>
+        <Property name="TabIndex">11</Property>
+        <Property name="Text">Warnings</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="lb_errors" children="Controls">
+        <Property name="Location">23, 325</Property>
+        <Property name="Name">lb_errors</Property>
+        <Property name="Size">108, 23</Property>
+        <Property name="TabIndex">10</Property>
+        <Property name="Text">Errors:</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="lb_elapsed" children="Controls">
+        <Property name="Location">22, 290</Property>
+        <Property name="Name">lb_elapsed</Property>
+        <Property name="Size">108, 23</Property>
+        <Property name="TabIndex">9</Property>
+        <Property name="Text">Elapsed:</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="lb_end" children="Controls">
+        <Property name="Location">22, 264</Property>
+        <Property name="Name">lb_end</Property>
+        <Property name="Size">108, 23</Property>
+        <Property name="TabIndex">8</Property>
+        <Property name="Text">End:</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="lb_start" children="Controls">
+        <Property name="Location">22, 238</Property>
+        <Property name="Name">lb_start</Property>
+        <Property name="Size">108, 23</Property>
+        <Property name="TabIndex">7</Property>
+        <Property name="Text">Start:</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="lb_progress" children="Controls">
+        <Property name="Location">23, 196</Property>
+        <Property name="Name">lb_progress</Property>
+        <Property name="Size">108, 23</Property>
+        <Property name="TabIndex">6</Property>
+        <Property name="Text">Progress:</Property>
+        <Property name="TextAlign">MiddleLeft</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="lb_Step" children="Controls">
+        <Property name="Location">23, 161</Property>
+        <Property name="Name">lb_Step</Property>
+        <Property name="Size">108, 23</Property>
+        <Property name="TabIndex">5</Property>
+        <Property name="Text">Step:</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="lb_deploymentstatus" children="Controls">
+        <Property name="Location">23, 120</Property>
+        <Property name="Name">lb_deploymentstatus</Property>
+        <Property name="Size">108, 23</Property>
+        <Property name="TabIndex">4</Property>
+        <Property name="Text">Deployment Status:</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="lb_ComputerName" children="Controls">
+        <Property name="Location">23, 94</Property>
+        <Property name="Name">lb_ComputerName</Property>
+        <Property name="Size">108, 23</Property>
+        <Property name="TabIndex">3</Property>
+        <Property name="Text">Computer Name:</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="labelID" children="Controls">
+        <Property name="Location">23, 48</Property>
+        <Property name="Name">labelID</Property>
+        <Property name="Size">108, 23</Property>
+        <Property name="TabIndex">2</Property>
+        <Property name="Text">ID:</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="lb_Identity" children="Controls">
+        <Property name="Location">4, 4</Property>
+        <Property name="Name">lb_Identity</Property>
+        <Property name="Size">100, 23</Property>
+        <Property name="TabIndex">1</Property>
+        <Property name="Text">Identity</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="bt_info_close" children="Controls">
+        <Property name="Anchor">Bottom, Right</Property>
+        <Property name="Location">656, 468</Property>
+        <Property name="Name">bt_info_close</Property>
+        <Property name="Size">75, 23</Property>
+        <Property name="TabIndex">0</Property>
+        <Property name="Text">Close</Property>
+        <Property name="UseVisualStyleBackColor">True</Property>
+        <Event name="Click">bt_info_close_Click</Event>
+      </Object>
+    </Object>
+    <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonExit" children="Controls">
+      <Property name="Anchor">Bottom, Right</Property>
+      <Property name="Location">681, 568</Property>
+      <Property name="Name">buttonExit</Property>
+      <Property name="Size">75, 23</Property>
+      <Property name="TabIndex">1</Property>
+      <Property name="Text">E&amp;xit</Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+      <Event name="Click">buttonExit_Click</Event>
+    </Object>
+    <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonLoad" children="Controls">
+      <Property name="Anchor">Bottom, Left</Property>
+      <Property name="Location">12, 568</Property>
+      <Property name="Name">buttonLoad</Property>
+      <Property name="Size">75, 23</Property>
+      <Property name="TabIndex">0</Property>
+      <Property name="Text">&amp;Load</Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+      <Event name="Click">buttonLoad_Click</Event>
+    </Object>
+    <Object type="System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="datagridviewResults" children="Controls">
+      <Property name="AllowUserToAddRows">False</Property>
+      <Property name="AllowUserToDeleteRows">False</Property>
+      <Property name="AllowUserToResizeRows">False</Property>
+      <Property name="Anchor">Top, Bottom, Left, Right</Property>
+      <Property name="Columns">
+        <Item type="System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <Reference name="ID" />
+        </Item>
+        <Item type="System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <Reference name="Name" />
+        </Item>
+        <Item type="System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <Reference name="Status" />
+        </Item>
+        <Item type="System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <Reference name="StepName" />
+        </Item>
+        <Item type="System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <Reference name="PercentComplete" />
+        </Item>
+        <Item type="System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <Reference name="ElapsedTime" />
+        </Item>
+        <Item type="System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <Reference name="CurrentStep" />
+        </Item>
+        <Item type="System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <Reference name="TotalSteps" />
+        </Item>
+      </Property>
+      <Property name="Location">12, 12</Property>
+      <Property name="MultiSelect">False</Property>
+      <Property name="Name">datagridviewResults</Property>
+      <Property name="ReadOnly">True</Property>
+      <Property name="SelectionMode">FullRowSelect</Property>
+      <Property name="Size">744, 508</Property>
+      <Property name="TabIndex">2</Property>
+      <Event name="CellMouseDoubleClick">datagridviewResults_CellMouseDoubleClick</Event>
+      <Event name="ColumnHeaderMouseClick">datagridviewResults_ColumnHeaderMouseClick</Event>
+    </Object>
+  </Object>
+  <Object type="System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="ID">
+    <Property name="HeaderText">ID</Property>
+    <Property name="Name">ID</Property>
+    <Property name="ReadOnly">True</Property>
+    <Property name="Visible">False</Property>
+  </Object>
+  <Object type="System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Name">
+    <Property name="HeaderText">Name</Property>
+    <Property name="Name">Name</Property>
+    <Property name="ReadOnly">True</Property>
+  </Object>
+  <Object type="System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Status">
+    <Property name="HeaderText">Status</Property>
+    <Property name="Name">Status</Property>
+    <Property name="ReadOnly">True</Property>
+  </Object>
+  <Object type="System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="StepName">
+    <Property name="HeaderText">Step Name</Property>
+    <Property name="Name">StepName</Property>
+    <Property name="ReadOnly">True</Property>
+  </Object>
+  <Object type="System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="PercentComplete">
+    <Property name="HeaderText">Percent Complete</Property>
+    <Property name="Name">PercentComplete</Property>
+    <Property name="ReadOnly">True</Property>
+  </Object>
+  <Object type="System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="ElapsedTime">
+    <Property name="HeaderText">Elapsed Time</Property>
+    <Property name="Name">ElapsedTime</Property>
+    <Property name="ReadOnly">True</Property>
+  </Object>
+  <Object type="System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="CurrentStep">
+    <Property name="HeaderText">Current Step</Property>
+    <Property name="Name">CurrentStep</Property>
+    <Property name="ReadOnly">True</Property>
+  </Object>
+  <Object type="System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="TotalSteps">
+    <Property name="HeaderText">Total Steps</Property>
+    <Property name="Name">TotalSteps</Property>
+    <Property name="ReadOnly">True</Property>
+  </Object>
+  <Object type="System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="dg_Time">
+    <Property name="HeaderText">Time</Property>
+    <Property name="Name">dg_Time</Property>
+    <Property name="ReadOnly">True</Property>
+    <Property name="Width">200</Property>
+  </Object>
+  <Object type="System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="dg_Message">
+    <Property name="HeaderText">Message</Property>
+    <Property name="Name">dg_Message</Property>
+    <Property name="ReadOnly">True</Property>
+    <Property name="Width">540</Property>
+  </Object>
+  <Object type="System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="timer_main">
+    <Property name="Interval">10000</Property>
+    <Event name="Tick">timer_main_Tick</Event>
+  </Object>
+  <Object type="System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="timer_info">
+    <Property name="Interval">10000</Property>
+    <Event name="Tick">timer_info_Tick</Event>
+  </Object>
+  <Object type="System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="checkboxCheckbox1" children="Controls">
+    <Property name="Location">138, 468</Property>
+    <Property name="Name">checkboxCheckbox1</Property>
+    <Property name="Size">104, 24</Property>
+    <Property name="TabIndex">2</Property>
+    <Property name="Text">checkbox1</Property>
+    <Property name="UseVisualStyleBackColor">True</Property>
+  </Object>
+  <Code><![CDATA[#Set Global variables
+$global:computername = $null 
+$global:dartport = $null 
+$global:dartticket = $null 
+$global:dartip = $null 
+$global:url = $null
+$global:server = $null
+$global:dartpath = $null
+
+function OnApplicationLoad {
+	#Note: This function is not called in Projects
+	#Note: This function runs before the form is created
+	#Note: To get the script directory in the Packager use: Split-Path $hostinvocation.MyCommand.path
+	#Note: To get the console output in the Packager (Windows Mode) use: $ConsoleOutput (Type: System.Collections.ArrayList)
+	#Important: Form controls cannot be accessed in this function
+	#TODO: Add snapins and custom code to validate the application load
+	
+	return $true #return true for success or false for failure
+}
+
+
+function OnApplicationExit {
+	#Note: This function is not called in Projects
+	#Note: This function runs after the form is closed
+	#TODO: Add custom code to clean up and unload snapins when the application exits
+	
+	$script:ExitCode = 0 #Set the exit code for the Packager
+}
+
+$FormEvent_Load={
+	#Load External Config file	
+	If (Test-Path ".\MDTMonitor.config.xml")
+	{
+		try {
+			[XML]$ConfXML = Get-Content .\MDTMonitor.config.xml
+			
+			#Add config items into global data
+			
+			if($ConfXML.RootElement.Configuration.URL -eq "http://changeme:9801/MDTMonitorData/Computers")
+			{
+				[Windows.Forms.MessageBox]::Show("You need to update MDTMonitor.config.xml with correct data.", "Update Config!", [Windows.Forms.MessageBoxButtons]::OK, [Windows.Forms.MessageBoxIcon]::Information)
+				$buttonExit.PerformClick()
+			}
+			
+			$global:url = $ConfXML.RootElement.Configuration.URL
+			$global:server = $ConfXML.RootElement.Configuration.server
+			$global:dartpath = $ConfXML.RootElement.Configuration.DartToolPath
+		
+		}
+		catch{[Windows.Forms.MessageBox]::Show("$error.Exception", "Error!", [Windows.Forms.MessageBoxButtons]::OK, [Windows.Forms.MessageBoxIcon]::Information)}
+	}
+	Else
+	{
+	 	[Windows.Forms.MessageBox]::Show("MDTMonitor.config.xml must exist and be located in the same dir.", "Config Missing", [Windows.Forms.MessageBoxButtons]::OK, [Windows.Forms.MessageBoxIcon]::Information)
+		$buttonExit.PerformClick()
+	}
+	
+}
+
+$buttonExit_Click={
+	#Close Application
+	$formMain.Close()
+}
+
+$buttonLoad_Click={
+	#Load information from webservice and add to datagrid
+
+	$datagridviewResults.Rows.Clear()
+	
+	# Load Global Data from MDT Webservice
+	$URL = "$($global:url)"
+	
+	function GetMDTData {
+	  $Data = Invoke-RestMethod $URL
+
+	  foreach($property in ($Data.content.properties) ) {
+	    New-Object PSObject -Property @{
+	    	Name = $($property.Name);
+			PercentComplete = $($property.PercentComplete.'#text');
+			Warnings = $($property.Warnings.'#text');
+	    	Errors = $($property.Errors.'#text');
+			DeploymentStatus = $(
+		        Switch ($property.DeploymentStatus.'#text') {
+			        1 { "Active/Running" }
+			        2 { "Failed" }
+			        3 { "Completed" }
+					4 { "Unresponisve" }
+		        Default { "Unknown" }
+		        }
+	    	);
+	    	StartTime = [datetime]$($property.StartTime.'#text') # -replace "T"," ";
+	    	EndTime = $(
+					if (($property.EndTime.'#text') -ne $null){
+						[datetime]$($property.EndTime.'#text')
+					} 
+				);#-replace "T"," ";
+			ID = $($property.ID.'#text')
+			UniqueID = $($property.UniqueID.'#text')
+			CurrentStep = $($property.CurrentStep.'#text')
+			TotalSteps = $($property.TotalSteps.'#text')
+			StepName = $($property.StepName)
+			LastTime = [datetime]$($property.LastTime.'#text') #-replace "T"," ";
+			DartIP = $($property.DartIP) -replace "System.XML.XMLElement", "";
+			DartPort = $($property.DartPort) -replace "System.XML.XMLElement", "";
+			DartTicket = $($property.DartTicket) -replace "System.XML.XMLElement", "";
+			VMHost = $($property.VMHost) -replace "System.XML.XMLElement", "";
+			VMName = $($property.VMName) -replace "System.XML.XMLElement", "";
+		    }
+		}
+	} 
+	
+	try{
+		$mdtdata = GetMDTData 
+		
+		foreach ($item in $mdtdata) {
+			
+			If($item.EndTime -ne $null)
+			{
+				$ElapsedTime = ($item.LastTime).Subtract($item.StartTime) 
+				if($ElapsedTime.Days -ne 0)
+				{
+					$ElapsedString = $ElapsedTime.ToString("%d\d\ hh\:mm\:ss")
+				}
+				else
+				{
+					$ElapsedString = $ElapsedTime.ToString("hh\:mm\:ss")
+				}
+			}
+			else
+			{
+				$ElapsedTime = [DateTime]::Now.ToUniversalTime().Subtract($item.StartTime) 
+				if($ElapsedTime.Days -ne 0)
+				{
+					$ElapsedString = $ElapsedTime.ToString("%d\d\ hh\:mm\:ss")
+				}
+				else
+				{
+					$ElapsedString = $ElapsedTime.ToString("hh\:mm\:ss")
+				}
+			}
+			
+			$datagridviewResults.Rows.Add($item.ID, $item.Name, $item.DeploymentStatus, $item.StepName, $item.PercentComplete, $ElapsedString , $item.CurrentStep, $item.TotalSteps )
+		}
+			$bt_info.Enabled = $true
+	}
+	catch{[Windows.Forms.MessageBox]::Show("$error.Exception", "Error!", [Windows.Forms.MessageBoxButtons]::OK, [Windows.Forms.MessageBoxIcon]::Information)}
+
+	
+	if($cb_autorefreshmain.CheckState -eq 'Checked')
+	{
+		$timer_main.Start()
+	}
+	else
+	{
+		$timer_main.Stop()
+	}
+
+}
+
+$bt_info_Click={
+	#TODO: Place custom script here
+	
+	#Stop the refresh of the main window while we are not looking there and also hide the checkbox to dont confuse
+	$timer_main.Stop()
+	$cb_autorefreshmain.Visible = $false
+	
+	if ($datagridviewResults.SelectedCells.Count -ne 0)
+	{
+            [int]$selectedrowindex = $datagridviewResults.SelectedCells[0].RowIndex;
+            [DataGridViewRow]$selectedRow = $datagridviewResults.Rows[$selectedrowindex];  
+            [string]$RowID = ($selectedRow.Cells["ID"].Value).ToString();           
+    }
+	
+	$bt_ViewErrors.Enabled = $false
+	$bt_ViewWarnings.Enabled = $false
+	$bt_DaRTRemote.Visible = $false
+	
+	# Load Global Data from MDT Webservice
+	$URL = "$($global:url)"
+	
+	function GetMDTData {
+	  $Data = Invoke-RestMethod $URL
+
+	  foreach($property in ($Data.content.properties) ) {
+	    New-Object PSObject -Property @{
+	    	Name = $($property.Name);
+			PercentComplete = $($property.PercentComplete.'#text');
+			Warnings = $($property.Warnings.'#text');
+	    	Errors = $($property.Errors.'#text');
+			DeploymentStatus = $(
+		        Switch ($property.DeploymentStatus.'#text') {
+			        1 { "Active/Running" }
+			        2 { "Failed" }
+			        3 { "Completed" }
+					4 { "Unresponisve" }
+		        Default { "Unknown" }
+		        }
+	    	);
+	    	StartTime = [datetime]$($property.StartTime.'#text') # -replace "T"," ";
+	    	EndTime = $(
+					if (($property.EndTime.'#text') -ne $null){
+						[datetime]$($property.EndTime.'#text')
+					} 
+				);#-replace "T"," ";
+			ID = $($property.ID.'#text')
+			UniqueID = $($property.UniqueID.'#text')
+			CurrentStep = $($property.CurrentStep.'#text')
+			TotalSteps = $($property.TotalSteps.'#text')
+			StepName = $($property.StepName)
+			LastTime = [datetime]$($property.LastTime.'#text') #-replace "T"," ";
+			DartIP = $($property.DartIP) -replace "System.XML.XMLElement", "";
+			DartPort = $($property.DartPort) -replace "System.XML.XMLElement", "";
+			DartTicket = $($property.DartTicket) -replace "System.XML.XMLElement", "";
+			VMHost = $($property.VMHost) -replace "System.XML.XMLElement", "";
+			VMName = $($property.VMName) -replace "System.XML.XMLElement", "";
+		    }
+		}
+	} 
+
+	try{
+		$mdtdata = GetMDTData 
+		
+		foreach ($item in $mdtdata){
+			If($item.ID -eq $RowID)
+			{
+				$tb_id.Text = $item.ID
+				
+				$tb_computername.Text = $item.Name
+				$global:computername = $item.Name
+				$tb_deploymentstatus.Text = $item.DeploymentStatus
+				
+				$tb_step.Text = $item.StepName
+				
+				$pb_progress.Maximum = $item.TotalSteps
+				$pb_progress.Value = $item.CurrentStep
+				$lb_stepofstep.Text = "Step " + $item.CurrentStep + " of " + $item.TotalSteps
+				
+				$tb_start.Text = ($item.StartTime).ToString("yyyy-MM-dd HH:mm:ss")
+				$tb_end.Text = if($item.EndTime -ne $null){($item.EndTime).ToString("yyyy-MM-dd HH:mm:ss")}
+				
+				If($item.EndTime -ne $null)
+				{
+					$ElapsedTime = ($item.LastTime).Subtract($item.StartTime) 
+					if($ElapsedTime.Days -ne 0)
+					{
+						$ElapsedString = $ElapsedTime.ToString("%d\d\ hh\:mm\:ss")
+					}
+					else
+					{
+						$ElapsedString = $ElapsedTime.ToString("hh\:mm\:ss")
+					}
+				}
+				else
+				{
+					$ElapsedTime = [DateTime]::Now.ToUniversalTime().Subtract($item.StartTime) 
+					if($ElapsedTime.Days -ne 0)
+					{
+						$ElapsedString = $ElapsedTime.ToString("%d\d\ hh\:mm\:ss")
+					}
+					else
+					{
+						$ElapsedString = $ElapsedTime.ToString("hh\:mm\:ss")
+					}
+				}
+				
+				$tb_elapsed.Text = $ElapsedString
+				
+				
+				$tb_errors.Text = $item.Errors
+				if($item.Errors -ne "0"){$bt_ViewErrors.Enabled = $true}
+				$tb_warnings.Text = $item.Warnings
+				if($item.Warnings -ne "0"){$bt_ViewWarnings.Enabled = $true}
+				
+				if($item.DartIP -ne "")
+				{
+					$bt_DaRTRemote.Visible = $true
+					$global:dartport = $item.DartPort 
+					$global:dartticket = $item.DartTicket 
+					$global:dartip = $item.DartIP
+				}
+			}
+		}
+	}
+	catch{[Windows.Forms.MessageBox]::Show("$error.Exception", "Error!", [Windows.Forms.MessageBoxButtons]::OK, [Windows.Forms.MessageBoxIcon]::Information)}
+	
+	
+	$pl_info.Visible = $true
+	
+}
+
+$bt_info_close_Click={
+
+	$cb_autorefreshinfo.Checked = $false
+	
+	if($cb_autorefreshmain.CheckState -eq 'Checked')
+	{
+		$timer_main.Start()
+	}
+	else
+	{
+		$timer_main.Stop()
+	}
+	
+	$cb_autorefreshmain.Visible = $true
+	$pl_info.Visible = $false
+}
+
+$bt_remotedesktop_Click={
+	#Write-Host $global:computername
+	Invoke-Expression "mstsc.exe /v:$($global:computername)"
+}
+
+$bt_DaRTRemote_Click={
+	#TODO: Place custom script here
+	#Write-Host	$global:dartport
+	#Write-Host	$global:dartticket
+	Write-Host	"`"$($global:dartip)`""
+	
+	#[Windows.Forms.MessageBox]::Show("$($global:dartpath)\DartRemoteViewer.exe -ticket=$($global:dartticket) -ipaddress=$($global:dartip) -portnumber=$($global:dartport)", "Config Missing", [Windows.Forms.MessageBoxButtons]::OK, [Windows.Forms.MessageBoxIcon]::Information)
+	if(Test-Path "$($global:dartpath)\DartRemoteViewer.exe")
+	{
+		Invoke-Expression "$($global:dartpath)\DartRemoteViewer.exe -ticket=$($global:dartticket) -ipaddress=`"$($global:dartip)`" -port=$($global:dartport)"
+	}
+	else
+	{
+		[Windows.Forms.MessageBox]::Show("$($global:dartpath)\DartRemoteViewer.exe is missing", "Dart Tool Missing", [Windows.Forms.MessageBoxButtons]::OK, [Windows.Forms.MessageBoxIcon]::Information)
+	}
+	#DartRemoteViewer.exe -ticket=$global:dartticket -ipaddress=$global:dartip -portnumber=$global:dartport
+}
+
+$bt_ViewErrors_Click={
+
+	try{
+		$scriptblock={
+		#Force en-US Culture to workaround Get-Winevent bug with empty messages on other cultures	
+		[System.Threading.Thread]::CurrentThread.CurrentCulture = New-Object "System.Globalization.CultureInfo" "en-US"
+		
+		#Set timespan to get logs from to speed up eventlog gather	
+		$endtime=[datetime]::Now
+		$starttime=$endtime.AddDays(-7) 
+
+		# level=2 - means Error ; 3 - means Warning
+		get-winevent -FilterHashtable @{logname="Application";providername="MDT_Monitor";level=2;starttime=$starttime;endtime=$endtime}}
+
+		#Create PS-session to server to run command localaly, much quicker
+		$pssession=New-PSSession -ComputerName $($global:server)
+		$eventhash=Invoke-Command -Session $pssession -ScriptBlock $scriptblock | select-object -Property Timecreated,Message
+		Remove-PSSession -ComputerName $($global:server)
+		
+		#Clear datagrid
+		$dg_output.Rows.Clear()
+		 
+		foreach($row in $eventhash)
+		{
+			#if(
+			if($row.Message.ToString() -match $global:computername){
+				$dg_output.Rows.Add($row.TimeCreated.ToString("yyyy-MM-dd HH:mm:ss"),$row.Message.ToString())
+			}
+		}
+		$pl_output.Visible = $true
+	}
+	catch{[Windows.Forms.MessageBox]::Show("$error.Exception", "Error!", [Windows.Forms.MessageBoxButtons]::OK, [Windows.Forms.MessageBoxIcon]::Information)}
+}
+
+$bt_ViewWarnings_Click={
+
+	try{
+		$scriptblock={
+		#Force en-US Culture to workaround Get-Winevent bug with empty messages on other cultures	
+		[System.Threading.Thread]::CurrentThread.CurrentCulture = New-Object "System.Globalization.CultureInfo" "en-US"
+		
+		#Set timespan to get logs from to speed up eventlog gather	
+		$endtime=[datetime]::Now
+		$starttime=$endtime.AddDays(-7) 
+		
+		# level=2 - means Error ; 3 - means Warning
+		get-winevent -FilterHashtable @{logname="Application";providername="MDT_Monitor";level=3;starttime=$starttime;endtime=$endtime}}
+
+		#Create PS-session to server to run command localaly, much quicker
+		$pssession=New-PSSession -ComputerName $($global:server)
+		$eventhash=Invoke-Command -Session $pssession -ScriptBlock $scriptblock | select-object -Property Timecreated,Message
+		Remove-PSSession -ComputerName $($global:server)
+			
+		#Clear datagrid
+		$dg_output.Rows.Clear()
+		 
+		foreach($row in $eventhash)
+		{
+			#if(
+			if($row.Message.ToString() -match $global:computername){
+				$dg_output.Rows.Add($row.TimeCreated.ToString("yyyy-MM-dd HH:mm:ss"),$row.Message.ToString())
+			}
+		}
+		
+		$pl_output.Visible = $true
+	}
+	catch{[Windows.Forms.MessageBox]::Show("$error.Exception", "Error!", [Windows.Forms.MessageBoxButtons]::OK, [Windows.Forms.MessageBoxIcon]::Information)}
+
+}
+
+$bt_dgClose_Click={
+	#TODO: Place custom script here
+	
+	$pl_output.Visible = $false
+}
+
+$timer_main_Tick={
+	#TODO: Place custom script here
+	$buttonLoad.PerformClick()
+	#Write-host "Tick"
+}	
+
+$timer_info_Tick={
+	#TODO: Place custom script here
+	$bt_info.PerformClick()
+}
+
+$cb_autorefreshmain_CheckedChanged={
+	#TODO: Place custom script here
+	if($cb_autorefreshmain.CheckState -eq 'Unchecked')
+	{
+		$timer_main.Stop()
+	}
+	else
+	{
+		$timer_main.Start()
+		$buttonLoad.PerformClick()
+	}
+}
+
+$cb_autorefreshinfo_CheckedChanged={
+	#TODO: Place custom script here
+	if($cb_autorefreshinfo.CheckState -eq 'Unchecked')
+	{
+		$timer_info.Stop()		
+	}
+	else
+	{
+		$timer_info.Start()
+		$bt_info.PerformClick()
+	}
+}
+
+$datagridviewResults_ColumnHeaderMouseClick=[System.Windows.Forms.DataGridViewCellMouseEventHandler]{
+#Event Argument: $_ = [System.Windows.Forms.DataGridViewCellMouseEventArgs]
+	#Write-Host "test"
+	if($datagridviewResults.DataSource -is [System.Data.DataTable])
+	{
+		$column = $datagridviewResults.Columns[$_.ColumnIndex]
+		$direction = [System.ComponentModel.ListSortDirection]::Ascending
+		
+		if($column.HeaderCell.SortGlyphDirection -eq 'Descending')
+		{
+			$direction = [System.ComponentModel.ListSortDirection]::Descending
+		}
+
+		$datagridviewResults.Sort($datagridviewResults.Columns[$_.ColumnIndex], $direction)
+	}
+}
+
+$datagridviewResults_CellMouseDoubleClick=[System.Windows.Forms.DataGridViewCellMouseEventHandler]{
+#Event Argument: $_ = [System.Windows.Forms.DataGridViewCellMouseEventArgs]
+	
+	$bt_info.PerformClick()
+}
+]]></Code>
+  <Mode>1</Mode>
+  <Assemblies>
+    <Assembly>System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</Assembly>
+    <Assembly>System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Assembly>
+    <Assembly>System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Assembly>
+    <Assembly>System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <Assembly>mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Assembly>
+    <Assembly>System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Assembly>
+    <Assembly>System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Assembly>
+    <Assembly>System.DirectoryServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <Assembly>System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Assembly>
+    <Assembly>System.ServiceProcess, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+  </Assemblies>
+  <Packager>
+    <General>
+      <PackageName>MDTMonitor</PackageName>
+      <PackageIcon>C:\Jobb\PowerShell\MDT\MDTMonitor.ico</PackageIcon>
+      <ManifestCreation>1</ManifestCreation>
+      <CustomManifest>
+      </CustomManifest>
+      <Platform>1</Platform>
+      <RunSTA>0</RunSTA>
+      <PowerShellVersion>3</PowerShellVersion>
+    </General>
+    <Security>
+      <Username>
+      </Username>
+      <Password>
+      </Password>
+      <SignPackage>False</SignPackage>
+      <Certificate>
+      </Certificate>
+      <CertificatePassword>
+      </CertificatePassword>
+      <RunAs>0</RunAs>
+    </Security>
+    <Version>
+      <FileVersion>1.2.0.0</FileVersion>
+      <ProductVersion>1.2.0.0</ProductVersion>
+      <ProductName>MDT Monitor</ProductName>
+      <Description>
+      </Description>
+      <Company> Mattias Benninge</Company>
+      <Copyright> Mattias Benninge</Copyright>
+      <InternalName>MDTMonitor.exe</InternalName>
+      <OriginalFileName>MDTMonitor.exe</OriginalFileName>
+      <Comment>
+      </Comment>
+    </Version>
+  </Packager>

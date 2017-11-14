@@ -1,0 +1,1 @@
+WScript.Echo "Press [ENTER] to continue..."

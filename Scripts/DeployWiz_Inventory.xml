@@ -1,0 +1,17 @@
+<Wizard>
+  <Global>
+    <CustomScript>DeployWiz_Inventory.vbs</CustomScript>
+  </Global>
+  <Pane id="Inventory">
+    <Body><![CDATA[
+  <tr>
+	<td></td>
+			<td style="width: 160px;">
+				<span class=Larger>Inventor<u class=Larger>y</u> number:</span>
+			</td>
+			<td>
+				<input type=text id="ComputerDescription" name=ComputerDescription size=15 language=vbscript onpropertychange=InitializeInventoryNumber AccessKey=y />
+			</td>
+	</tr>]]></Body>
+  </Pane>
+</Wizard>

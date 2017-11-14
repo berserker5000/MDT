@@ -1,0 +1,10 @@
+\\srv-winsrv-gdn\d$\deploymentshare\
+\\srv-winsrv-vin\d$\DeploymentShare\
+\\srv-winsrv-mnk\c$\DeploymentShare
+\\srv-winsrv-wro\d$\deploymentshare\
+\\srv-winsrv-dp\d$\DeploymentShare\
+\\srv-winsrv-od\c$\DeploymentShare\
+\\srv-winsrv-kyiv\c$\DeploymentShare\
+\\srv-winsrv-kh\c$\DeploymentShare\
+\\srv-winsrv-mal\d$\DeploymentShare\
+\\srv-winsrv-lviv\d$\DeploymentShare\

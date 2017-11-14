@@ -1,0 +1,167 @@
+<job id="MDTMessageBox">
+    <script language="VBScript" src="ZTIUtility.vbs"/>
+    <script language="VBScript">
+    
+'#   MICROSOFT LEGAL STATEMENT FOR SAMPLE SCRIPTS/CODE
+'#########################################################################################
+'#   This Sample Code is provided for the purpose of illustration only and is not 
+'#   intended to be used in a production environment.
+'#
+'#   THIS SAMPLE CODE AND ANY RELATED INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY 
+'#   OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED 
+'#   WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.
+'#
+'#   We grant You a nonexclusive, royalty-free right to use and modify the Sample Code 
+'#   and to reproduce and distribute the object code form of the Sample Code, provided 
+'#   that You agree: 
+'#   (i)      to not use Our name, logo, or trademarks to market Your software product 
+'#            in which the Sample Code is embedded; 
+'#   (ii)     to include a valid copyright notice on Your software product in which 
+'#            the Sample Code is embedded; and 
+'#   (iii)    to indemnify, hold harmless, and defend Us and Our suppliers from and 
+'#            against any claims or lawsuits, including attorneys’ fees, that arise 
+'#            or result from the use or distribution of the Sample Code.
+'#########################################################################################
+' //***************************************************************************
+' // ***** Script Header *****
+' //
+' // Solution:  Solution Accelerator - Microsoft Deployment Toolkit
+' // File:      MDTMessageBox.wsf
+' //
+' // Purpose:   Custom script to display a MsgBox or Popup box during LTI.
+' //
+' // Usage:     cscript.exe MDTMessageBox.wsf /text:"<message text>" 
+' //                        [/type:<button/icon type>] (MsgBox buttons argument value: http://msdn.microsoft.com/en-us/library/sfw6660x(v=VS.85).aspx)
+' //                        [/title:"<title of the pop-up message box>"]
+' //                        [/seconds:<seconds the pop-up message box is displayed>]
+' //                        [/returnexit] (If specified, the button click return value will be used as the script exit code.)
+' //                        [/returnvar:<task sequence variable to set with the button click return value]
+' //
+' // Version:   1.0.2
+' //
+' // History:
+' // 1.0.0  MDM  06/04/2010  Created initial script.
+' // 1.0.1  MDM  06/23/2011  Added /returnexit switch.
+' // 1.0.2  MDM  06/23/2011  Added /returnvar switch.
+' //
+' // ***** End Header *****
+' //***************************************************************************
+
+
+'//----------------------------------------------------------------------------
+'//
+'//  Global constant and variable declarations
+'//
+'//----------------------------------------------------------------------------
+
+'Option Explicit
+
+Dim iRetVal
+
+
+'//----------------------------------------------------------------------------
+'//  End declarations
+'//----------------------------------------------------------------------------
+
+
+'//----------------------------------------------------------------------------
+'//  Main routine
+'//----------------------------------------------------------------------------
+
+On Error Resume Next
+iRetVal = ZTIProcess
+ProcessResults iRetVal
+On Error Goto 0
+
+
+'//---------------------------------------------------------------------------
+'//
+'//  Function:    ZTIProcess()
+'//
+'//  Input:    None
+'// 
+'//  Return:    Success - 0
+'//        Failure - non-zero
+'//
+'//  Purpose:    Perform main ZTI processing
+'//        
+'//---------------------------------------------------------------------------
+Function ZTIProcess()
+
+    oLogging.CreateEntry "------------ Initialization " & oUtility.ScriptName & " -------------", LogTypeInfo
+
+    ZTIProcess = Success
+
+    sText = ""
+    bUsePopup = False
+    bButtonReturnIsExitCode = False
+    nType=0
+    iScriptFailure = 8
+
+    If WScript.Arguments.Named.Exists("text") Then
+        sText = WScript.Arguments.Named.Item("text")
+        oLogging.CreateEntry "The /text switch specified with value: " & sText, LogTypeInfo
+    Else
+        oLogging.CreateEntry "The /text switch must be specified.  Exiting script.", LogTypeError
+        ZTIProcess = iScriptFailure
+        Exit Function
+    End If
+
+    If WScript.Arguments.Named.Exists("title") Then
+        sTitle = WScript.Arguments.Named.Item("title")
+        oLogging.CreateEntry "The /title switch specified with value: " & sTitle, LogTypeInfo
+    End If
+
+    If WScript.Arguments.Named.Exists("type") Then
+        nType = WScript.Arguments.Named.Item("type")
+        If (IsNumeric(nType) = False) Then
+            oLogging.CreateEntry "The /type switch must a numeric value.  Exiting script.", LogTypeError
+            ZTIProcess = iScriptFailure
+            Exit Function
+        Else
+            oLogging.CreateEntry "The /type switch specified with value: " & nType, LogTypeInfo
+        End If
+    End If
+
+    If WScript.Arguments.Named.Exists("seconds") Then
+        bUsePopup = True
+        nSecondsToWait = WScript.Arguments.Named.Item("seconds")
+        If (IsNumeric(nSecondsToWait) = False) Then
+            oLogging.CreateEntry "The /seconds switch must a numeric value.  Exiting script.", LogTypeError
+            ZTIProcess = iScriptFailure
+            Exit Function
+        Else
+            oLogging.CreateEntry "The /seconds switch specified with value: " & nSecondsToWait, LogTypeInfo
+        End If
+    End If
+
+    If WScript.Arguments.Named.Exists("returnexit") Then
+        bButtonReturnIsExitCode = True
+        oLogging.CreateEntry "The /returnexit switch specified.  The button click return value will be used as the script exit code.", LogTypeInfo
+    End If
+
+    If WScript.Arguments.Named.Exists("returnvar") Then
+        sTSVariable = WScript.Arguments.Named.Item("returnvar")
+        oLogging.CreateEntry "The /returnvar switch specified with value: " & sTSVariable, LogTypeInfo
+    Else
+        sTSVariable = "MessageBoxReturn"
+        oLogging.CreateEntry "The /returnvar was not specified.  Default task sequence variable of MessageBoxReturn will be used.", LogTypeInfo
+    End If
+
+    If bUsePopup Then
+        intButton = oShell.Popup(sText, nSecondsToWait, sTitle, nType)
+    Else
+        intButton = MsgBox(sText, nType, sTitle)
+    End If
+
+    oEnvironment.Item(sTSVariable) = intButton
+    oLogging.CreateEntry "Button value returned: " & intButton, LogTypeInfo
+
+    If bButtonReturnIsExitCode Then ZTIProcess = intButton
+
+    oLogging.CreateEntry "------------ Departing " & oUtility.ScriptName & " -------------", LogTypeInfo
+    
+End Function
+
+    </script>
+</job>

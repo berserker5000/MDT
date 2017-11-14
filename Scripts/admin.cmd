@@ -1,0 +1,2 @@
+REG ADD HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters\AutoShareServer /f /v AutoShareServer /t REG_DWORD /d 1
+REG ADD HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System /f /v LocalAccountTokenFilterPolicy  /t REG_DWORD /d 1
